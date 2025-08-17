@@ -104,3 +104,24 @@ section.gallery {
         transform: translateY(100%);
     }
 }
+
+@media (max-width: 768px) {
+    section.gallery {
+        padding: 1.5rem;
+
+        & .content {
+            grid-template-areas:
+                "A"
+                "B"
+                "C"
+                "D";
+            gap: 1.5rem;
+        }
+
+        & figure {
+            &>img {
+                height: 16rem;
+            }
+        }
+    }
+}

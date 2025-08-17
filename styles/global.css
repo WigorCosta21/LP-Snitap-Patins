@@ -50,3 +50,10 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+@media(max-width: 768px) {
+    :root {
+        --text-lg: 1.5rem;
+        --text-xl: 2rem;
+    }
+}
